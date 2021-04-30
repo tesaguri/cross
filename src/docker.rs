@@ -53,7 +53,7 @@ pub fn register(target: &Target, verbose: bool) -> Result<()> {
     docker_command("run")?
         .arg("--privileged")
         .arg("--rm")
-        .arg("ubuntu:16.04")
+        .arg("ubuntu:20.04")
         .args(&["sh", "-c", cmd])
         .run(verbose)
 }
